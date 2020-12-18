@@ -30,12 +30,12 @@ WHERE Nombre = 'Pau Gasol';*/
 --Pasar el peso a kilos
 --update jugadores set Peso = Peso * 0.4535;
 --BBDD Jardineria
-use Jardineria
+--use Jardineria
 --pedidos he añadido un nuevo campo que se llama importe y que esta todo a valores minimos, lo quiero actualizar; tendria que sacar la información de la tabla detallePedidos
 /*select SUM(cantidad*PrecioUnidad) from DetallePedidos join Pedidos
 on DetallePedidos.CodigoPedido = Pedidos.CodigoPedido
 group by Pedidos.CodigoPedido*/
-update Pedidos set Importe = 
+/*update Pedidos set Importe = 
 select SUM(cantidad*PrecioUnidad) from DetallePedidos join Pedidos
 on DetallePedidos.CodigoPedido = Pedidos.CodigoPedido
 group by Pedidos.CodigoPedido;
@@ -68,4 +68,6 @@ where CodigoPedido NOT IN (
 	select CodigoPedido from DetallePedidos
 );
 --Hemos calculado aquellos que tienen lineas de pedidos cuanto valen.
---los registros que no encuentra los pone null
+--los registros que no encuentra los pone null*/
+
+--delete
