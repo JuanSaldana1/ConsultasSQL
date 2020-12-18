@@ -17,3 +17,15 @@ where Pais = 'España'*/
 where Pais = 'España';*/
 /*use compras
 select codigart, descrart into Resumen from Articulos;*/
+
+--update
+
+use NBA
+/*--actualizar el equipo de pau gasol que ha fichado por los knicks
+UPDATE jugadores SET Nombre_equipo= 'Knicks', Peso =Peso+80
+WHERE Nombre = 'Pau Gasol';
+--Pau Gasol pesa más
+UPDATE jugadores SET  Peso =Peso+80
+WHERE Nombre = 'Pau Gasol';*/
+--Pasar el peso a kilos
+update jugadores set Peso = Peso * 0.4535;
