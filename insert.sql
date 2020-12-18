@@ -71,3 +71,15 @@ where CodigoPedido NOT IN (
 --los registros que no encuentra los pone null*/
 
 --delete
+--borrar todos los productos de los cuales no se hallan hecho pedidos
+
+use Jardineria
+--Sacar todos los empleados de barcelona
+
+--Borrar los empleados de la ciudad de barcelona
+--crear tabla con empleados de barcelona
+select * into EmpleadosBarcelona from Empleados
+where Empleados.CodigoOficina in (
+	select CodigoOficina from Oficinas
+	where Oficinas.Ciudad = 'Barcelona'
+);
